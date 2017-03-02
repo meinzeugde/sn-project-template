@@ -1,0 +1,1 @@
+gs.debug("Hello World!");

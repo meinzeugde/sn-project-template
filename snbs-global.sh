@@ -1,0 +1,1 @@
+/c/nodejs/node /c/snow-runner/run.js authCode@instance --scope 'global' background_scripts/global.js

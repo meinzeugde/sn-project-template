@@ -30,13 +30,42 @@ Also make sure to install everything in the proposed folders as suggested in the
     * otherwise type `node /c/sn-filesync-master/bin/app.js --config ./sync-config.json`
 * start coding :)
 
-# 3. Auto-Completion
+# 3. Auto-Completion (VSCode)
 
 The project template comes with a preinstalled Auto-Completion for JQuery and ServiceNow.
-
-If you want to use GlideRecord Auto-Completion, please visit: https://github.com/meinzeugde/sn-dts.
 
 For further Information or infos about updates on the related Typescript Definitions, look here:
 
 * https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/jquery
 * https://github.com/bryceg/servicenow-dts
+
+# 3.1. GlideRecord Auto-Completion (VSCode)
+
+If you want to use GlideRecord Auto-Completion, please visit: https://github.com/meinzeugde/sn-dts.
+
+Some of the steps from the installation are already handled within this project template.
+
+# 4. Running background scripts from within Terminal
+
+For more information on running background scripts from within your IDE, visit: https://github.com/matthaak/snow-runner.
+
+After installing the module from the repository, be sure modify the prepared Shell script in the root of this project: `snbs-global.sh`.
+This way you'll have an easy way of running your background script from within your project.
+
+Explanation of the command:
+
+```sh
+/c/nodejs/node /c/snow-runner/run.js authCode@instance --scope 'global' background_scripts/global.js
+                                     ^------^ This is your Base64 Authorization-Key, you can copy it from your `sync-config.json` after having 'sndl' or `snsrv` ran once
+                                              ^------^ This is you instance name (without the "service-now.com")
+```
+
+## 4.1. Starting the Script
+
+Run the script from a Unix-Shell with the following command: `./snbs-global.sh`
+
+## 4.2. Suggestion on application scopes
+
+If you like to you can create a copy of this script for different application scopes.
+Therefore you should also make a copy of the 
+The script will create 3 files ('.org.snowlib.snow-runner...') in your project root folder. Just leave them untouched.
