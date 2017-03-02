@@ -1,0 +1,8 @@
+{
+    "name": "project",
+    "dependencies": {
+        "jquery/index.d.ts": {
+            "commit": "e8761854cdadd8a71a91c228ad69bb0a20b7956e"
+        }
+    }
+}

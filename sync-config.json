@@ -1,0 +1,37 @@
+{
+    "roots": {
+        "c:/sn_dev/xxx": {
+            "host": "xxx.service-now.com",
+            "user": "xxx",
+            "pass": "xxx"
+        }
+    },
+    "search": {
+        "mine": {
+            "query": "active=true^sys_updated_by=javascript:gs.getUserName()^ORsys_created_by=javascript:gs.getUserName()^ORDERBYDESCsys_updated_on",
+            "records_per_search": "100"
+        },
+        "team": {
+            "query": "active=true^sys_created_on>javascript:gs.dateGenerate('2015-03-25','23:59:59')^sys_created_by!=javascript:gs.getUserName()^sys_updated_by!=javascript:gs.getUserName()^sys_created_by!=admin^ORDERBYDESCsys_updated_on",
+            "records_per_search": "100"
+        },
+        "script-includes": {
+            "table": "sys_script_include",
+            "query": "active=true^sys_created_on>javascript:gs.dateGenerate('2015-03-25','23:59:59')",
+            "records_per_search": "1",
+            "download": true
+        },
+        "script-includes-plus": {
+            "table": "sys_script_include",
+            "query": "active=true^sys_created_on>javascript:gs.dateGenerate('2015-03-25','23:59:59')",
+            "records_per_search": "1",
+            "download": true,
+            "full_record": true
+        }
+    },
+    "preLoad": true,
+    "createAllFolders": false,
+    "ensureUniqueNames": false,
+    "ignoreDefaultFolders": false,
+    "debug": false
+}

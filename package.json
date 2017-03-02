@@ -1,0 +1,15 @@
+{
+    "name": "project",
+    "version": "1.0.0",
+    "description": "A template for further SNOW projects. Please refer to README.MD",
+    "main": "-",
+    "dependencies": {},
+    "devDependencies": {
+        "jslint": "^0.10.3"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Matteo Esche",
+    "license": "ISC"
+}

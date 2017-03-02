@@ -1,0 +1,11 @@
+{
+    "root": "c:/your_project/",
+    "host": "xxx.service-now.com",
+    "user": "username",
+    "pass": "password",
+    "tables": [
+        "sys_user",
+        "core_company",
+        "incident"
+    ]
+}
