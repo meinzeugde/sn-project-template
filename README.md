@@ -33,7 +33,6 @@ Also make sure to install everything in the proposed folders as suggested in the
 # 3. Auto-Completion
 
 The project template comes with a preinstalled Auto-Completion for JQuery and ServiceNow.
-To use those definition files, you'll have to append them as comments on the first line  of your scripts, e.g.:
 
 If you want to use GlideRecord Auto-Completion, please visit: https://github.com/meinzeugde/sn-dts.
 
