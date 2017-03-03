@@ -50,15 +50,7 @@ Some of the steps from the installation are already handled within this project 
 For more information on running background scripts from within your IDE, visit: https://github.com/matthaak/snow-runner.
 
 After installing the module from the repository, be sure modify the prepared Shell script in the root of this project: `snbs-global.sh`.
-This way you'll have an easy way of running your background script from within your project.
-
-Explanation of the command:
-
-```sh
-/c/nodejs/node /c/snow-runner/run.js authCode@instance --scope 'global' background_scripts/global.js
-                                     ^------^ This is your Base64 Authorization-Key, you can copy it from your `sync-config.json` after having 'sndl' or `snsrv` ran once
-                                              ^------^ This is you instance name (without the "service-now.com")
-```
+This way you'll have an easy way of running your background script from within your project including track of all previous runs in form of a logfile.
 
 ## 4.1. Starting the Script
 

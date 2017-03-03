@@ -9,7 +9,8 @@ INSTANCE_NAME=instance_prefix
 INSTANCE_SCOPE=global
 
 ### OUTPUT AND LOG RESULTS
-echo "=======TIME OF START========" | tee -a $OUTPUT_LOG
+echo "
+=======TIME OF START========" | tee -a $OUTPUT_LOG
 echo "`date -u` `./script.sh`" | tee -a $OUTPUT_LOG
 echo "=======ORIGINAL SCRIPT======" | tee -a $OUTPUT_LOG
 cat $INPUT_SCRIPT | tee -a $OUTPUT_LOG
