@@ -17,7 +17,8 @@ cat $INPUT_SCRIPT | tee -a $OUTPUT_LOG
 echo "
 =======OUTPUT===============" | tee -a $OUTPUT_LOG
 echo -e "\033[${COLORCODE}m"
-/c/nodejs/node /c/snow-runner/run.js $INSTANCE_AUTH@$INSTANCE_NAME --scope "$INSTANCE_SCOPE" $INPUT_SCRIPT | tee -a $OUTPUT_LOG
+/c/nodejs/node /c/snow-runner/run.js $INSTANCE_AUTH@$INSTANCE_NAME --scope $INSTANCE_SCOPE $INPUT_SCRIPT | tee -a $OUTPUT_LOG
+rm ./.org.snowlib.snow-runner*  # remove temp data to prevent issues when working with multiple application scopes
 
 # Color	    Foreground
 # Black	    30

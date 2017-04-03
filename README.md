@@ -59,5 +59,10 @@ Run the script from a Unix-Shell with the following command: `./snbs-global.sh`
 ## 4.2. Suggestion on application scopes
 
 If you like to you can create a copy of this script for different application scopes.
-Therefore you should also make a copy of the 
-The script will create 3 files ('.org.snowlib.snow-runner...') in your project root folder. Just leave them untouched.
+Therefore you should also create a different file in folder `background_scripts`.
+
+### 4.2.1. Preventing issues with multiple Application Scopes
+
+FYI: The app 'snow-runner' will normally create 3 files ('.org.snowlib.snow-runner...') in your project root folder.
+In one of those files, the application scope will be stored. If those files exist and you try to give a different application scope to the snow-runner via the parameter `--scope`, the app will anyway use the application scope stored in the temp file.
+If you like to work with multiple application scopes, these temp files have to be removed. The shell script will take care of that.
