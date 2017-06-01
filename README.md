@@ -1,15 +1,13 @@
-# 1. Knowledge Base
+# 1. Prerequisites
 
-* https://solidservision.service-now.com/kb_view.do?sysparm_article=KB0010593
+Please make sure the complete the following steps as described in the article.html:
 
-Please make sure the complete the following steps as described in the article:
-
-* Install Visual Studio Code (to `c:/VSCode`)
+* Install Visual Studio Code [VSCode] (to `c:/VSCode`)
 * Install Git + Bash and integrate with VSC (to `c:/git`)
 * Install NodeJS (to `c:/nodejs`)
 * Install Node Modules `tsd`, `typings` and `jslint` globally (with `-g` flag)
 * Install SN-Filesync (to `sn-filesync-master`)
-* Install the recommended Extensions (optional, but really helpful)
+* Install the recommended VSC Extensions (optional, but really helpful)
 
 Also make sure to install everything in the proposed folders as suggested in the article.
 
