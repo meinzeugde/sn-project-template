@@ -6,6 +6,11 @@
             "pass": "xxx"
         }
     },
+    "tables": [
+        "sys_user",
+        "core_company",
+        "incident"
+    ],
     "search": {
         "mine": {
             "query": "active=true^sys_updated_by=javascript:gs.getUserName()^ORsys_created_by=javascript:gs.getUserName()^ORDERBYDESCsys_updated_on",
