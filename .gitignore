@@ -4,3 +4,5 @@
 compare
 .org.snowlib.snow-runner*
 snbs-*.log
+\~\$*.xlsx
+/background_scripts/*.min*

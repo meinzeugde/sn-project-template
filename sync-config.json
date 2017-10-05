@@ -204,27 +204,23 @@
                 "client.js": "client_script",
                 "demo.js": "demo_data",
                 "server.js": "script",
+                "link.js": "link",
                 "html": "template",
-                "scss": "scss"
+                "scss": "scss",
+                "options.json": "option_schema",
+                "demo.json": "demo_data",
+                "id": "id"
             },
+            "subDirPattern": "<name>",
             "_custom": true
         },
-        "transform_maps": {
-            "table": "sys_transform_map",
+        "ui_actions_mobile": {
+            "table": "sys_ui_ng_action",
             "key": "name",
             "fields": {
                 "js": "script"
             },
-            "subDirPattern": "script_<run_script>",
-            "_custom": true
-        },
-        "transform_field_maps": {
-            "table": "sys_transform_entry",
-            "key": "target_field",
-            "fields": {
-                "js": "source_script"
-            },
-            "subDirPattern": "script_<use_source_script>/source_table/source_field",
+            "subDirPattern": "table/client_<client>",
             "_custom": true
         },
         "transform_scripts": {
@@ -236,13 +232,22 @@
             "subDirPattern": "map/active_<active>/when/order_<order>",
             "_custom": true
         },
-        "ui_actions_mobile": {
-            "table": "sys_ui_ng_action",
+        "transform_field_maps": {
+            "table": "sys_transform_entry",
+            "key": "target_field",
+            "fields": {
+                "js": "source_script"
+            },
+            "subDirPattern": "script_<use_source_script>/source_table/source_field",
+            "_custom": true
+        },
+        "transform_maps": {
+            "table": "sys_transform_map",
             "key": "name",
             "fields": {
                 "js": "script"
             },
-            "subDirPattern": "table/client_<client>",
+            "subDirPattern": "script_<run_script>",
             "_custom": true
         }
     }
