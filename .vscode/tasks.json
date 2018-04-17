@@ -1,0 +1,21 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "sync current file with ServiceNow",
+            "type": "shell",
+            "isBackground": false,
+            "command": "node /c/sn-filesync-master/bin/app.js --config ./sync-config.json --push \"${relativeFile}\"",
+            "problemMatcher": []
+        },
+        {
+            "label": "create JSDoc for current file",
+            "type": "shell",
+            "isBackground": false,
+            "command": "jsdoc \"${relativeFile}\"",
+            "problemMatcher": []
+        },
+    ]
+}

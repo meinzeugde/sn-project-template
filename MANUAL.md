@@ -247,7 +247,7 @@ If you initialized a project properly and also configured your Visual Studio Cod
 
 * Utilize GIT to see changes (View > SCM). Periodically commit Changes to have a local versioning of files and therefore an overview about those changes.
 
-* Start the sn-filesync server by typing `snsrv` into terminal and let it run. Each time you save a file locally, the changes will get uploaded to ServiceNow. Stop the server by Pressing [Ctrl+c] in Terminal if you don't need to make changes on any file anymore.
+* Start the sn-filesync server by typing `snsrv` into terminal and let it run. Each time you save a file locally, the changes will get uploaded to ServiceNow. Stop the server by Pressing [Ctrl+c] in Terminal if you don't need to make changes on any file anymore. **[UPDATE]** You don't need to run the file watcher (`snsrv`) all the time and instead only synchronize the currently opened file to ServiceNow. This method is highly recommended! Please have a look at the `README.md` > `5.1 Synchronize the currently opened File with ServiceNow`.
 
 * If you need Auto-Completion for specific GlideRecord tables, just type `sndts` into Terminal. This will download the appropriate Type Definitions. If necessary, add tables to `sync-config.json` (refer to Bullet Point 8 in **4.1. Initializing a project**).
 
