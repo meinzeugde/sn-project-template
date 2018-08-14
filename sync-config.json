@@ -8,39 +8,8 @@
     },
     "tables": [
         "sys_user",
-						 
-							
-						
-							 
-							
         "core_company",
-						 
-					   
-						  
         "incident"
-						 
-							
-								
-								  
-								   
-							 
-						 
-						   
-						   
-					   
-							 
-								  
-						  
-						  
-								   
-						  
-							  
-					 
-					 
-					 
-						   
-					 
-				 
     ],
     "search": {
         "mine": {
@@ -253,11 +222,11 @@
             "subDirPattern": "<name>",
             "_custom": true
         },
-		"wf_activity_definition": {
+        "wf_activity_definition": {
             "table": "wf_activity_definition",
             "key": "name",
             "fields": {
-                "js": "script"			  
+                "js": "script"
             },
             "subDirPattern": "<name>",
             "_custom": true
